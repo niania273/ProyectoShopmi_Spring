@@ -35,8 +35,8 @@ public class Usuario {
     @Column(name = "FECCRE")
     private LocalDateTime fecCre;
 
-    @Column(name = "ESTUSUARIO", nullable = false)
-    private Boolean estUsu; // Mapeo de TINYINT a Boolean
+    @Column(name = "ESTUSUARIO")
+    private Boolean estUsu;
 
     @OneToOne
     @JoinColumn(name = "CODEMPLEADO")
