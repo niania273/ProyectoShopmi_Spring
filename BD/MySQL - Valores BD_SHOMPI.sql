@@ -1,12 +1,11 @@
 USE BD_SHOPMI;
 
-/* INSERCIONES */
-
 -- ROL
 INSERT INTO ROL (NOMBREROL, ESTROL) VALUES ('ADM', 1); -- Administrador
 INSERT INTO ROL (NOMBREROL, ESTROL) VALUES ('VND', 1); -- Vendedor
 INSERT INTO ROL (NOMBREROL, ESTROL) VALUES ('CJR', 1); -- Cajero
-INSERT INTO ROL (NOMBREROL, ESTROL) VALUES ('SPT', 1); -- Soporte	
+INSERT INTO ROL (NOMBREROL, ESTROL) VALUES ('SPT', 1); -- Soporte
+
 
 -- CATEGORIA
 INSERT INTO CATEGORIA (IMGCATEGORIA, NOMCATEGORIA, ESTCATEGORIA) 
@@ -38,230 +37,231 @@ INSERT INTO MARCA (NOMBREMARCA, ESTMARCA) VALUES ('TP-Link', 1);
 
 -- SMARTPHONES
 INSERT INTO PRODUCTO (CODCATEGORIA, IMGPRODUCTO, NOMPRODUCTO, DESCRIPCION, PREUNI, CODMARCA, STOCK, ESTPRODUCTO) 
-VALUES (1, 'belleza1.jpg', 'RUBOR DEGRADADO BRICK RED', 'Rubor en tonos degradados de rojo ladrillo, ideal para un look natural y sofisticado. Aporta un acabado suave y duradero', 11.90, 1, 100, 1);
+VALUES (1, 'smartphones1.jpg', 'iPhone 15 Pro Max 128GB', 'Smartphone de última generación con cámara de 48 MP y rendimiento excepcional', 1299.99, 1, 50, 1);
 
 INSERT INTO PRODUCTO (CODCATEGORIA, IMGPRODUCTO, NOMPRODUCTO, DESCRIPCION, PREUNI, CODMARCA, STOCK, ESTPRODUCTO) 
-VALUES (1, 'belleza2.jpg', 'PERFUME OWL', 'Perfume con una fragancia suave y fresca, inspirado en la naturaleza nocturna. Perfecto para uso diario.', 7.90, 1, 100, 1);
+VALUES (1, 'smartphones2.jpg', 'Samsung Galaxy S24 Ultra 256GB', 'Pantalla Dynamic AMOLED 2X, 5G, cámara de 200 MP y diseño premium', 1499.99, 2, 40, 1);
 
 INSERT INTO PRODUCTO (CODCATEGORIA, IMGPRODUCTO, NOMPRODUCTO, DESCRIPCION, PREUNI, CODMARCA, STOCK, ESTPRODUCTO) 
-VALUES (1, 'belleza3.jpg', 'LAPIZ DE OJOS LIQUIDO ULTRAFINO (MARRON)', 'Lápiz líquido de ojos en tono marrón ultrafino, para una aplicación precisa y de larga duración. Resalta tu mirada con un acabado elegante.', 10.30, 1, 100, 1);
+VALUES (1, 'smartphones3.jpg', 'Xiaomi Redmi Note 13 Pro+ 5G', 'Smartphone 5G con procesador potente, pantalla de 120Hz y cámara de 200 MP', 499.99, 3, 60, 1);
 
 INSERT INTO PRODUCTO (CODCATEGORIA, IMGPRODUCTO, NOMPRODUCTO, DESCRIPCION, PREUNI, CODMARCA, STOCK, ESTPRODUCTO) 
-VALUES (1, 'belleza4.jpg', 'AIR CUSHION CC CREAM WHEAT COLOR', 'Cream con fórmula hidratante y cobertura ligera en tono wheat. Ideal para unificar el tono de piel y proteger contra agentes externos.', 23.90, 1, 100, 1);
+VALUES (1, 'smartphones4.jpg', 'Sony Xperia 1 IV', 'Smartphone con pantalla 4K OLED y cámara avanzada para video y fotografía', 1299.99, 4, 30, 1);
 
 INSERT INTO PRODUCTO (CODCATEGORIA, IMGPRODUCTO, NOMPRODUCTO, DESCRIPCION, PREUNI, CODMARCA, STOCK, ESTPRODUCTO) 
-VALUES (1, 'belleza5.jpg', 'HYDRATING CC CREAM (02 SKIN COLOR)', 'Cream hidratante en tono piel 02. Proporciona una cobertura natural y luminosidad, ideal para pieles secas o mixtas.', 15.90, 1, 100, 1);
+VALUES (1, 'smartphones5.jpg', 'HP Omen 45 Smartphone', 'Diseño premium, potente rendimiento y gran pantalla para gamers', 799.99, 5, 25, 1);
 
 INSERT INTO PRODUCTO (CODCATEGORIA, IMGPRODUCTO, NOMPRODUCTO, DESCRIPCION, PREUNI, CODMARCA, STOCK, ESTPRODUCTO) 
-VALUES (1, 'belleza6.jpg', 'LS Sky High WSH Very Black', 'Máscara de pestañas en tono negro intenso, que alarga y define cada pestaña sin grumos. Fórmula resistente al agua para un acabado duradero.', 69.80, 2, 100, 1);
+VALUES (1, 'smartphones6.jpg', 'Lenovo Legion Phone Duel 2', 'Smartphone gamer con dual cooling y pantalla de 144Hz', 999.99, 6, 35, 1);
 
 INSERT INTO PRODUCTO (CODCATEGORIA, IMGPRODUCTO, NOMPRODUCTO, DESCRIPCION, PREUNI, CODMARCA, STOCK, ESTPRODUCTO) 
-VALUES (1, 'belleza7.jpg', 'FIT ME MATTE+PORE FDN 120CLASSIC IV', 'Base de maquillaje Fit Me en tono 120 Classic Ivory, con acabado mate y control de brillo. Minimiza la apariencia de poros para una piel uniforme.', 61.90, 2, 100, 1);
+VALUES (1, 'smartphones7.jpg', 'GoPro HERO 11 Black', 'Cámara de acción que se puede vincular a tu smartphone, ideal para aventuras extremas', 399.99, 8, 45, 1);
 
 INSERT INTO PRODUCTO (CODCATEGORIA, IMGPRODUCTO, NOMPRODUCTO, DESCRIPCION, PREUNI, CODMARCA, STOCK, ESTPRODUCTO) 
-VALUES (1, 'belleza8.jpg', 'IAR ERASER DARK CIRCLES NEUTRALIZER', 'Corrector para ojeras con efecto neutralizador. Fórmula suave que cubre y corrige las ojeras para un look fresco y despierto.', 58.90, 2, 100, 1);
+VALUES (1, 'smartphones8.jpg', 'Anker PowerCore 20000 mAh', 'Power bank de alta capacidad con carga rápida para smartphones', 49.99, 9, 120, 1);
 
 INSERT INTO PRODUCTO (CODCATEGORIA, IMGPRODUCTO, NOMPRODUCTO, DESCRIPCION, PREUNI, CODMARCA, STOCK, ESTPRODUCTO) 
-VALUES (1, 'belleza9.jpg', 'GARNIER EXP ACLARA CREMA DE OJOS', 'Crema de ojos con efecto aclarante, formulada para reducir las ojeras y las manchas oscuras. Hidrata y refresca la piel delicada del contorno de ojos.', 32.90, 3, 100, 1);
+VALUES (1, 'smartphones9.jpg', 'DJI OM 5 Smartphone Stabilizer', 'Estabilizador portátil para smartphones con control preciso', 159.99, 7, 100, 1); 
 
 INSERT INTO PRODUCTO (CODCATEGORIA, IMGPRODUCTO, NOMPRODUCTO, DESCRIPCION, PREUNI, CODMARCA, STOCK, ESTPRODUCTO) 
-VALUES (1, 'belleza10.jpg', 'GARNIER AGUA MICELAR EN ACEITE OLEO', 'Agua micelar con aceite para una limpieza profunda y efectiva. Elimina maquillaje resistente y nutre la piel, dejando una sensación suave y fresca.', 49.90, 3, 100, 1);
+VALUES (1, 'smartphones10.jpg', 'TP-Link Tapo C200', 'Cámara de seguridad inteligente para tu smartphone con visión nocturna', 39.99, 10, 80, 1);
 
 INSERT INTO PRODUCTO (CODCATEGORIA, IMGPRODUCTO, NOMPRODUCTO, DESCRIPCION, PREUNI, CODMARCA, STOCK, ESTPRODUCTO) 
-VALUES (1, 'belleza11.jpg', 'GARNIER EXP ACLARA ANTIMANCHAS SERUM NOCHE', 'Sérum aclarante nocturno que reduce manchas y mejora la textura de la piel. Fórmula concentrada para un tono de piel más uniforme y luminoso.', 79.90, 3, 100, 1);
+VALUES (1, 'smartphones11.jpg', 'Funda Antigolpes para iPhone 15 Pro Max', 'Funda resistente a golpes, elegante y ligera, ideal para proteger tu iPhone 15 Pro Max', 29.99, 1, 200, 1);
 
 INSERT INTO PRODUCTO (CODCATEGORIA, IMGPRODUCTO, NOMPRODUCTO, DESCRIPCION, PREUNI, CODMARCA, STOCK, ESTPRODUCTO) 
-VALUES (1, 'belleza12.jpg', 'GARNIER HIDRA BOMB EYE MASK ORANGE X SACHET', 'Mascarilla para ojos en formato sachet, con extracto de naranja y ácido hialurónico. Hidrata y revitaliza el área del contorno de ojos en minutos.', 12.90, 3, 100, 1);
+VALUES (1, 'smartphones12.jpg', 'Cargador Rápido Samsung 25W USB-C', 'Cargador rápido original de 25W, ideal para todos los dispositivos Samsung', 24.99, 2, 150, 1);
 
 
--- LAPTOPS
+-- COMPUTO
 INSERT INTO PRODUCTO (CODCATEGORIA, IMGPRODUCTO, NOMPRODUCTO, DESCRIPCION, PREUNI, CODMARCA, STOCK, ESTPRODUCTO) 
-VALUES (2, 'tecnologia1.jpg', 'CONJUNTO DE TECLADO Y MOUSE INALAMBRICOS AZUL', 'Combinación de teclado y mouse inalámbricos en color azul. Ideal para mejorar la productividad y mantener tu espacio de trabajo organizado sin cables.', 59.90, 1, 100, 1);
-
-INSERT INTO PRODUCTO (CODCATEGORIA, IMGPRODUCTO, NOMPRODUCTO, DESCRIPCION, PREUNI, CODMARCA, STOCK, ESTPRODUCTO) 
-VALUES (2, 'tecnologia2.jpg', 'AURICULARES INALAMBRICOS TWS BLANCOS', 'Auriculares inalámbricos TWS en color blanco con tecnología Bluetooth. Ofrecen sonido claro, comodidad y una experiencia sin cables.', 59.90, 1, 100, 1);
+VALUES (2, 'computo1.jpg', 'MacBook Air M2', 'Laptop ligera con chip Apple M2, ideal para productividad.', 1199.99, 1, 15, 1);
 
 INSERT INTO PRODUCTO (CODCATEGORIA, IMGPRODUCTO, NOMPRODUCTO, DESCRIPCION, PREUNI, CODMARCA, STOCK, ESTPRODUCTO) 
-VALUES (2, 'tecnologia3.jpg', 'SOPORTE AJUSTABLE PARA TELEFONO CONEJO NEGRO', 'Soporte ajustable para teléfono en forma de conejo de color negro. Práctico y divertido, ideal para mantener tu dispositivo en posición vertical.', 9.90, 1, 100, 1);
+VALUES (2, 'computo2.jpg', 'MacBook Pro 14"', 'Potente laptop para profesionales con chip M3 y pantalla Liquid Retina.', 1999.99, 1, 10, 1);
 
 INSERT INTO PRODUCTO (CODCATEGORIA, IMGPRODUCTO, NOMPRODUCTO, DESCRIPCION, PREUNI, CODMARCA, STOCK, ESTPRODUCTO) 
-VALUES (2, 'tecnologia4.jpg', 'MOUSE INALAMBRICO HELLO KITTY ROSADO', 'Mouse inalámbrico inspirado en Hello Kitty, en color rosado. Perfecto para los fanáticos de este personaje, combina diseño adorable con funcionalidad', 29.90, 1, 100, 1);
+VALUES (2, 'computo3.jpg', 'Samsung Galaxy Book3', 'Laptop ultradelgada con pantalla AMOLED y gran rendimiento.', 1099.99, 2, 8, 1);
 
 INSERT INTO PRODUCTO (CODCATEGORIA, IMGPRODUCTO, NOMPRODUCTO, DESCRIPCION, PREUNI, CODMARCA, STOCK, ESTPRODUCTO) 
-VALUES (2, 'tecnologia5.jpg', 'AUDIFONOS HELLO KITTY', 'Audífonos con diseño de Hello Kitty. Cómodos y ligeros, ideales para disfrutar de música o videos con estilo y calidad de sonido.', 19.90, 1, 100, 1);
+VALUES (2, 'computo4.jpg', 'Xiaomi RedmiBook Pro 15', 'Laptop con pantalla 2.5K y procesador Ryzen 7.', 899.99, 3, 12, 1);
 
 INSERT INTO PRODUCTO (CODCATEGORIA, IMGPRODUCTO, NOMPRODUCTO, DESCRIPCION, PREUNI, CODMARCA, STOCK, ESTPRODUCTO) 
-VALUES (2, 'tecnologia6.jpg', 'AURICULARES ON-EAR INALÁMBRICOS CON OREJAS DE GATO(ROSA)', 'Auriculares inalámbricos on-ear con orejas de gato en color rosa. Añade un toque de diversión a tu música con un diseño único y sonido envolvente.', 49.90, 1, 100, 1);
+VALUES (2, 'computo5.jpg', 'Sony VAIO SX14', 'Laptop premium con diseño ligero y pantalla 4K.', 1499.99, 4, 5, 1);
 
 INSERT INTO PRODUCTO (CODCATEGORIA, IMGPRODUCTO, NOMPRODUCTO, DESCRIPCION, PREUNI, CODMARCA, STOCK, ESTPRODUCTO) 
-VALUES (2, 'tecnologia7.jpg', 'AURICULARES OVER-EAR PARA JUEGOS CON CABLE Y LUZ RGB (NEGRO)', 'Auriculares gaming over-ear con cable y luces RGB. Diseñados para jugadores que buscan un sonido potente y una estética atractiva.', 59.90, 1, 100, 1);
+VALUES (2, 'computo6.jpg', 'HP Pavilion x360', 'Laptop convertible con pantalla táctil y rendimiento versátil.', 799.99, 5, 20, 1);
 
 INSERT INTO PRODUCTO (CODCATEGORIA, IMGPRODUCTO, NOMPRODUCTO, DESCRIPCION, PREUNI, CODMARCA, STOCK, ESTPRODUCTO) 
-VALUES (2, 'tecnologia8.jpg', 'MOUSE PAD GAMING', 'Mouse pad diseñado para gamers. Superficie suave y antideslizante que proporciona precisión y confort durante largas sesiones de juego.', 19.90, 1, 100, 1);
+VALUES (2, 'computo7.jpg', 'HP Victus Gaming', 'Laptop gamer con tarjeta gráfica dedicada y buen enfriamiento.', 999.99, 5, 9, 1);
 
 INSERT INTO PRODUCTO (CODCATEGORIA, IMGPRODUCTO, NOMPRODUCTO, DESCRIPCION, PREUNI, CODMARCA, STOCK, ESTPRODUCTO) 
-VALUES (2, 'tecnologia9.jpg', 'SOPORTE PLEGABLE PARA TELÉFONO MÓVIL CON AIRBAG', 'Soporte plegable para teléfono móvil con diseño de astronauta. Su sistema de airbag proporciona estabilidad adicional para tu dispositivo.', 7.90, 1, 100, 1);
+VALUES (2, 'computo8.jpg', 'Lenovo IdeaPad 3', 'Laptop confiable para uso diario con excelente batería.', 649.99, 6, 25, 1);
 
 INSERT INTO PRODUCTO (CODCATEGORIA, IMGPRODUCTO, NOMPRODUCTO, DESCRIPCION, PREUNI, CODMARCA, STOCK, ESTPRODUCTO) 
-VALUES (2, 'tecnologia10.jpg', 'SOPORTE PLEGABLE PARA MOVIL (BEBE DINOSAURIO)', 'Soporte plegable para móvil con diseño de bebé dinosaurio. Compacto y funcional, perfecto para sostener tu teléfono mientras ves videos o navegas.', 9.90, 1, 100, 1);
+VALUES (2, 'computo9.jpg', 'Lenovo Legion 5 Pro', 'Laptop para gaming con pantalla de alta tasa de refresco.', 1299.99, 6, 6, 1);
 
 INSERT INTO PRODUCTO (CODCATEGORIA, IMGPRODUCTO, NOMPRODUCTO, DESCRIPCION, PREUNI, CODMARCA, STOCK, ESTPRODUCTO) 
-VALUES (2, 'tecnologia11.jpg', 'CABLE USB ANDROID PUNTO-ORO ROSA (2M)', 'Cable USB para dispositivos Android en color rosa dorado. Con 2 metros de longitud, es ideal para cargar y sincronizar dispositivos con comodidad.', 19.90, 1, 100, 1);
+VALUES (2, 'computo10.jpg', 'Anker Docking Station', 'Estación de acoplamiento USB-C para laptops.', 149.99, 9, 18, 1);
 
 INSERT INTO PRODUCTO (CODCATEGORIA, IMGPRODUCTO, NOMPRODUCTO, DESCRIPCION, PREUNI, CODMARCA, STOCK, ESTPRODUCTO) 
-VALUES (2, 'tecnologia12.jpg', 'CARGADOR PARA COCHE CON DOBLE PUERTO USB 2.4A (BLANCO)', 'Cargador para coche con doble puerto USB y salida de 2.4A. Carga rápida y eficiente para mantener tus dispositivos conectados en el camino.', 19.90, 1, 100, 1);
+VALUES (2, 'computo11 .jpg', 'TP-Link Adaptador USB WiFi 6', 'Mejora tu conexión con este adaptador WiFi rápido.', 39.99, 10, 30, 1);
+
+INSERT INTO PRODUCTO (CODCATEGORIA, IMGPRODUCTO, NOMPRODUCTO, DESCRIPCION, PREUNI, CODMARCA, STOCK, ESTPRODUCTO) 
+VALUES (2, 'computo12.jpg', 'DJI Wireless Mouse', 'Mouse inalámbrico con diseño ergonómico y precisión láser.', 59.99, 7, 14, 1);
+
 
 -- AUDIO
-INSERT INTO PRODUCTO (CODCATEGORIA, IMGPRODUCTO, NOMPRODUCTO, DESCRIPCION, PREUNI, CODMARCA, STOCK, ESTPRODUCTO)
-VALUES ( 3, 'juguetes1.jpg', 'PELUCHE (LINDO GATITO AZUL DE 25CM)', 'Un peluche suave y adorable en forma de gatito azul, perfecto para regalar.', 19.90, 1, 100, 1);
+INSERT INTO PRODUCTO (CODCATEGORIA, IMGPRODUCTO, NOMPRODUCTO, DESCRIPCION, PREUNI, CODMARCA, STOCK, ESTPRODUCTO) 
+VALUES (3, 'audio1.jpg', 'AirPods Pro 2da Gen', 'Auriculares inalámbricos con cancelación activa de ruido.', 249.99, 1, 20, 1);
 
-INSERT INTO PRODUCTO (CODCATEGORIA, IMGPRODUCTO, NOMPRODUCTO, DESCRIPCION, PREUNI, CODMARCA, STOCK, ESTPRODUCTO)
-VALUES ( 3, 'juguetes2.jpg', 'PELUCHE CUTE PANDA CON FLOR ROSA', 'Panda con una flor rosa, ideal para coleccionistas de peluches.', 29.90, 1, 100, 1);
+INSERT INTO PRODUCTO (CODCATEGORIA, IMGPRODUCTO, NOMPRODUCTO, DESCRIPCION, PREUNI, CODMARCA, STOCK, ESTPRODUCTO) 
+VALUES (3, 'audio2.jpg', 'Samsung Galaxy Buds2 Pro', 'Auriculares con sonido Hi-Fi y ANC.', 199.99, 2, 15, 1);
 
-INSERT INTO PRODUCTO (CODCATEGORIA, IMGPRODUCTO, NOMPRODUCTO, DESCRIPCION, PREUNI, CODMARCA, STOCK, ESTPRODUCTO)
-VALUES ( 3, 'juguetes3.jpg', 'PELUCHE UNICORNIO VERDE', 'Unicornios son mágicos, y este es de color verde, lleno de diversión.', 29.90, 1, 100, 1);
+INSERT INTO PRODUCTO (CODCATEGORIA, IMGPRODUCTO, NOMPRODUCTO, DESCRIPCION, PREUNI, CODMARCA, STOCK, ESTPRODUCTO) 
+VALUES (3, 'audio3.jpg', 'Xiaomi Redmi Buds 4', 'Auriculares Bluetooth con buena autonomía y calidad.', 39.99, 3, 30, 1);
 
-INSERT INTO PRODUCTO (CODCATEGORIA, IMGPRODUCTO, NOMPRODUCTO, DESCRIPCION, PREUNI, CODMARCA, STOCK, ESTPRODUCTO)
-VALUES ( 3, 'juguetes4.jpg', 'PELUCHE CUTE PANDA CON SANDÍA', 'Panda con una sandía para los que aman peluches únicos.', 29.90, 1, 100, 1);
+INSERT INTO PRODUCTO (CODCATEGORIA, IMGPRODUCTO, NOMPRODUCTO, DESCRIPCION, PREUNI, CODMARCA, STOCK, ESTPRODUCTO) 
+VALUES (3, 'audio4.jpg', 'Sony WH-1000XM5', 'Audífonos over-ear con cancelación de ruido líder en el mercado.', 349.99, 4, 10, 1);
 
-INSERT INTO PRODUCTO (CODCATEGORIA, IMGPRODUCTO, NOMPRODUCTO, DESCRIPCION, PREUNI, CODMARCA, STOCK, ESTPRODUCTO)
-VALUES ( 3, 'juguetes5.jpg', 'PELUCHE ZORRO ROSA', 'Zorro rosado, perfecto para acompañar los dulces sueños de los niños.', 49.90, 1, 100, 1);
+INSERT INTO PRODUCTO (CODCATEGORIA, IMGPRODUCTO, NOMPRODUCTO, DESCRIPCION, PREUNI, CODMARCA, STOCK, ESTPRODUCTO) 
+VALUES (3, 'audio5.jpg', 'HP Bluetooth Headset 400', 'Auriculares ligeros para uso diario y llamadas.', 59.99, 5, 25, 1);
 
-INSERT INTO PRODUCTO (CODCATEGORIA, IMGPRODUCTO, NOMPRODUCTO, DESCRIPCION, PREUNI, CODMARCA, STOCK, ESTPRODUCTO)
-VALUES ( 3, 'juguetes6.jpg', 'PELUCHE OSO CON BUFANDA BLANCO', 'Oso con bufanda blanca, ideal para los días fríos.', 39.90, 1, 100, 1);
+INSERT INTO PRODUCTO (CODCATEGORIA, IMGPRODUCTO, NOMPRODUCTO, DESCRIPCION, PREUNI, CODMARCA, STOCK, ESTPRODUCTO) 
+VALUES (3, 'audio6.jpg', 'Lenovo LP40 Pro', 'Auriculares Bluetooth compactos con sonido envolvente.', 29.99, 6, 40, 1);
 
-INSERT INTO PRODUCTO (CODCATEGORIA, IMGPRODUCTO, NOMPRODUCTO, DESCRIPCION, PREUNI, CODMARCA, STOCK, ESTPRODUCTO)
-VALUES ( 3, 'juguetes7.jpg', 'ROMPECABEZAS METALIZADO 48PZAS FROZEN DISNEY', 'Un emocionante rompecabezas de Frozen con 48 piezas metalizadas.', 19.90, 4, 100, 1)M
+INSERT INTO PRODUCTO (CODCATEGORIA, IMGPRODUCTO, NOMPRODUCTO, DESCRIPCION, PREUNI, CODMARCA, STOCK, ESTPRODUCTO) 
+VALUES (3, 'audio7.jpg', 'Anker Soundcore Life Q30', 'Auriculares con cancelación activa y batería de 40h.', 89.99, 9, 22, 1);
 
-INSERT INTO PRODUCTO (CODCATEGORIA, IMGPRODUCTO, NOMPRODUCTO, DESCRIPCION, PREUNI, CODMARCA, STOCK, ESTPRODUCTO)
-VALUES ( 3, 'juguetes8.jpg', 'ROMPECABEZAS 5 EN 1 PRINCESAS DISNEY', 'Cinco rompecabezas en uno con tus princesas Disney favoritas.', 39.90, 4, 100, 1);
+INSERT INTO PRODUCTO (CODCATEGORIA, IMGPRODUCTO, NOMPRODUCTO, DESCRIPCION, PREUNI, CODMARCA, STOCK, ESTPRODUCTO) 
+VALUES (3, 'audio8.jpg', 'Anker Soundcore Liberty Air 2', 'Auriculares con micrófono dual y carga inalámbrica.', 99.99, 9, 18, 1);
 
-INSERT INTO PRODUCTO (CODCATEGORIA, IMGPRODUCTO, NOMPRODUCTO, DESCRIPCION, PREUNI, CODMARCA, STOCK, ESTPRODUCTO)
-VALUES ( 3, 'juguetes9.jpg', 'ROMPECABEZAS METALIZADO 48PZAS TOY STORY DISNEY', 'Rompecabezas de Toy Story con 48 piezas metalizadas para los más pequeños.', 19.90, 4, 100, 1);
+INSERT INTO PRODUCTO (CODCATEGORIA, IMGPRODUCTO, NOMPRODUCTO, DESCRIPCION, PREUNI, CODMARCA, STOCK, ESTPRODUCTO) 
+VALUES (3, 'audio9.jpg', 'GoPro Pro 3.5mm Mic Adapter', 'Adaptador de audio para cámaras GoPro.', 49.99, 8, 12, 1);
 
-INSERT INTO PRODUCTO (CODCATEGORIA, IMGPRODUCTO, NOMPRODUCTO, DESCRIPCION, PREUNI, CODMARCA, STOCK, ESTPRODUCTO)
-VALUES ( 3, 'juguetes10.jpg', 'ROMPECABEZAS DOBLE VISTA 48PZAS AVENGERS DISNEY', 'Doble diversión con este rompecabezas de Avengers.', 24.90, 4, 100, 1);
+INSERT INTO PRODUCTO (CODCATEGORIA, IMGPRODUCTO, NOMPRODUCTO, DESCRIPCION, PREUNI, CODMARCA, STOCK, ESTPRODUCTO) 
+VALUES (3, 'audio10.jpg', 'TP-Link UB500', 'Adaptador Bluetooth USB para conectar audio inalámbrico.', 19.99, 10, 35, 1);
 
-INSERT INTO PRODUCTO (CODCATEGORIA, IMGPRODUCTO, NOMPRODUCTO, DESCRIPCION, PREUNI, CODMARCA, STOCK, ESTPRODUCTO)
-VALUES ( 3, 'juguetes11.jpg', 'ROMPECABEZAS LENTICULAR 48PZAS PRINCESAS DISNEY', 'Rompecabezas lenticular con las princesas Disney, con efectos visuales únicos.', 19.90, 4, 100, 1);
+INSERT INTO PRODUCTO (CODCATEGORIA, IMGPRODUCTO, NOMPRODUCTO, DESCRIPCION, PREUNI, CODMARCA, STOCK, ESTPRODUCTO) 
+VALUES (3, 'audio11.jpg', 'DJI Mic', 'Micrófono inalámbrico profesional ideal para grabación de video.', 329.99, 7, 8, 1);
 
-INSERT INTO PRODUCTO (CODCATEGORIA, IMGPRODUCTO, NOMPRODUCTO, DESCRIPCION, PREUNI, CODMARCA, STOCK, ESTPRODUCTO)
-VALUES ( 3, 'juguetes12.jpg', 'ROMPECABEZAS LENTICULAR 48PZAS SPIDERMAN DISNEY', 'Rompecabezas lenticular de Spiderman con 48 piezas llenas de acción.', 19.90, 4, 100, 1);
+INSERT INTO PRODUCTO (CODCATEGORIA, IMGPRODUCTO, NOMPRODUCTO, DESCRIPCION, PREUNI, CODMARCA, STOCK, ESTPRODUCTO) 
+VALUES (3, 'audio12.jpg', 'Sony SRS-XB13', 'Mini parlante Bluetooth con Extra Bass y resistencia al agua.', 59.99, 4, 17, 1);
+
 
 
 -- GAMING
 INSERT INTO PRODUCTO (CODCATEGORIA, IMGPRODUCTO, NOMPRODUCTO, DESCRIPCION, PREUNI, CODMARCA, STOCK, ESTPRODUCTO) 
-VALUES (4, 'hogar1.jpg', 'JG CESTA PARA ROPA DOS PIEZAS', 'Juego de dos cestas para ropa, perfectas para el hogar moderno.', 29.90, 5, 100, 1);
+VALUES (4, 'gaming1', 'PlayStation 5', 'Consola de nueva generación con SSD ultra rápido y gráficos envolventes.', 499.99, 4, 10, 1);
 
 INSERT INTO PRODUCTO (CODCATEGORIA, IMGPRODUCTO, NOMPRODUCTO, DESCRIPCION, PREUNI, CODMARCA, STOCK, ESTPRODUCTO) 
-VALUES (4, 'hogar2.jpg', 'TAZA CON TAPA B', 'Taza con tapa, ideal para mantener tus bebidas calientes por más tiempo.', 19.90, 5, 100, 1);
+VALUES (4, 'gaming2.jpg', 'Xbox Series X', 'Consola potente con capacidad 4K y biblioteca Xbox Game Pass.', 499.99, 5, 12, 1);
 
 INSERT INTO PRODUCTO (CODCATEGORIA, IMGPRODUCTO, NOMPRODUCTO, DESCRIPCION, PREUNI, CODMARCA, STOCK, ESTPRODUCTO) 
-VALUES (4, 'hogar3.jpg', 'TAZAS ONCE OZ CUATRO SURT', 'Set de cuatro tazas de 11 oz, disponibles en colores surtidos.', 9.90, 5, 100, 1);
+VALUES (4, 'gaming3.jpg', 'Nintendo Switch OLED', 'Consola híbrida portátil con pantalla OLED y juegos exclusivos.', 349.99, 1, 20, 1);
 
 INSERT INTO PRODUCTO (CODCATEGORIA, IMGPRODUCTO, NOMPRODUCTO, DESCRIPCION, PREUNI, CODMARCA, STOCK, ESTPRODUCTO) 
-VALUES (4, 'hogar4.jpg', 'CESTA C', 'Cesta versátil para almacenar ropa u otros artículos del hogar.', 19.90, 5, 100, 1);
+VALUES (4, 'gaming4.jpg', 'Mouse Gaming Logitech G502 HERO', 'Mouse ergonómico con sensor de alta precisión.', 59.99, 5, 25, 1);
 
 INSERT INTO PRODUCTO (CODCATEGORIA, IMGPRODUCTO, NOMPRODUCTO, DESCRIPCION, PREUNI, CODMARCA, STOCK, ESTPRODUCTO) 
-VALUES (4, 'hogar5.jpg', 'TAZA NEGRO CON RAYAS', 'Taza de cerámica con diseño de rayas negras, elegante y moderna.', 9.90, 5, 100, 1);
+VALUES (4, 'gaming5.jpg', 'HP OMEN 16', 'Laptop gamer con GPU dedicada y pantalla de alta frecuencia.', 1299.99, 5, 8, 1);
 
 INSERT INTO PRODUCTO (CODCATEGORIA, IMGPRODUCTO, NOMPRODUCTO, DESCRIPCION, PREUNI, CODMARCA, STOCK, ESTPRODUCTO) 
-VALUES (4, 'hogar6.jpg', 'DISPENSADOR DE JABON PARA BANO NARANJA', 'Dispensador de jabón en un vibrante color naranja para darle vida a tu baño.', 16.90, 5, 100, 1);
+VALUES (4, 'gaming6.jpg', 'Lenovo Legion Go', 'Consola portátil con sistema Windows para gaming completo.', 699.99, 6, 7, 1);
 
 INSERT INTO PRODUCTO (CODCATEGORIA, IMGPRODUCTO, NOMPRODUCTO, DESCRIPCION, PREUNI, CODMARCA, STOCK, ESTPRODUCTO) 
-VALUES (4, 'hogar7.jpg', 'CANASTA BEIGE', 'Canasta multiusos en color beige, ideal para almacenar artículos en el hogar.', 16.90, 5, 100, 1);
+VALUES (4, 'gaming7.jpg', 'Mando Xbox Wireless', 'Control inalámbrico con agarre mejorado y compatibilidad amplia.', 59.99, 5, 30, 1);
 
 INSERT INTO PRODUCTO (CODCATEGORIA, IMGPRODUCTO, NOMPRODUCTO, DESCRIPCION, PREUNI, CODMARCA, STOCK, ESTPRODUCTO) 
-VALUES (4, 'hogar8.jpg', 'FRASCO CON TAPA A', 'Frasco con tapa hermética, ideal para almacenar alimentos o ingredientes.', 21.90, 5, 100, 1);
+VALUES (4, 'gaming8.jpg', 'Anker Cargador Doble para Controles', 'Base de carga rápida para mandos de consola.', 39.99, 9, 15, 1);
 
 INSERT INTO PRODUCTO (CODCATEGORIA, IMGPRODUCTO, NOMPRODUCTO, DESCRIPCION, PREUNI, CODMARCA, STOCK, ESTPRODUCTO) 
-VALUES (4, 'hogar9.jpg', 'TAZA TRIANGULOS', 'Taza de diseño geométrico con triángulos, para un toque moderno en tu cocina.', 9.90, 5, 100, 1);
+VALUES (4, 'gaming9.jpg', 'DJI GamePad Pro', 'Controlador ergonómico para juegos móviles y drones.', 89.99, 7, 5, 1);
 
 INSERT INTO PRODUCTO (CODCATEGORIA, IMGPRODUCTO, NOMPRODUCTO, DESCRIPCION, PREUNI, CODMARCA, STOCK, ESTPRODUCTO) 
-VALUES (4, 'hogar10.jpg', 'TAZA AZUL QUINIENTOS ML', 'Taza de 500 ml en color azul, perfecta para grandes porciones de bebidas.', 11.90, 5, 100, 1);
+VALUES (4, 'gaming10.jpg', 'GoPro MAX', 'Cámara 360 ideal para grabaciones inmersivas en VR y gaming.', 499.99, 8, 6, 1);
 
 INSERT INTO PRODUCTO (CODCATEGORIA, IMGPRODUCTO, NOMPRODUCTO, DESCRIPCION, PREUNI, CODMARCA, STOCK, ESTPRODUCTO) 
-VALUES (4, 'hogar11.jpg', 'VASO PLASTICO NARANJA', 'Vaso de plástico resistente en color naranja, ideal para uso diario.', 8.90, 5, 100, 1);
+VALUES (4, 'gaming11.jpg', 'TP-Link Archer GX90', 'Router gaming con triple banda y optimización de latencia.', 229.99, 10, 10, 1);
 
 INSERT INTO PRODUCTO (CODCATEGORIA, IMGPRODUCTO, NOMPRODUCTO, DESCRIPCION, PREUNI, CODMARCA, STOCK, ESTPRODUCTO) 
-VALUES (4, 'hogar12.jpg', 'JG DE BANO SEIS PZ', 'Juego de baño de seis piezas, incluye todos los accesorios esenciales.', 19.90, 5, 100, 1);
-
+VALUES (4, 'gaming12.jpg', 'Sony INZONE H9', 'Auriculares gaming con cancelación de ruido y audio espacial.', 279.99, 4, 9, 1);
 
 
 -- HOGAR INTELIGENTE
 INSERT INTO PRODUCTO (CODCATEGORIA, IMGPRODUCTO, NOMPRODUCTO, DESCRIPCION, PREUNI, CODMARCA, STOCK, ESTPRODUCTO) 
-VALUES (5, 'golosinas1.jpg', 'GOMAS GUSANOS ACIDOS 90G', 'Gomitas con forma de gusano, recubiertas con azúcar ácida, perfectas para un antojo ácido.', 4.90, 6, 100, 1);
+VALUES (5, 'hogar1.jpg', 'Apple HomePod Mini', 'Altavoz inteligente con Siri y sonido envolvente.', 99.99, 1, 15, 1);
 
 INSERT INTO PRODUCTO (CODCATEGORIA, IMGPRODUCTO, NOMPRODUCTO, DESCRIPCION, PREUNI, CODMARCA, STOCK, ESTPRODUCTO) 
-VALUES (5, 'golosinas2.jpg', 'CHICLE SANDIA 80G', 'Chicles con intenso sabor a sandía, ideales para refrescar tu día.', 4.90, 6, 100, 1);
+VALUES (5, 'hogar2.jpg', 'Samsung SmartThings Hub', 'Centro de control para dispositivos del hogar inteligente.', 89.99, 2, 10, 1);
 
 INSERT INTO PRODUCTO (CODCATEGORIA, IMGPRODUCTO, NOMPRODUCTO, DESCRIPCION, PREUNI, CODMARCA, STOCK, ESTPRODUCTO) 
-VALUES (5, 'golosinas3.jpg', 'ROLLER SANDIA', 'Caramelo con sabor a sandía en formato roller, divertido y delicioso.', 2.00, 6, 100, 1);
+VALUES (5, 'hogar3.jpg', 'Xiaomi Sensor de Temperatura y Humedad', 'Sensor inteligente para monitoreo ambiental.', 19.99, 3, 25, 1);
 
 INSERT INTO PRODUCTO (CODCATEGORIA, IMGPRODUCTO, NOMPRODUCTO, DESCRIPCION, PREUNI, CODMARCA, STOCK, ESTPRODUCTO) 
-VALUES (5, 'golosinas4.jpg', 'REGALIZ TUTTI FRUTTI 80G', 'Regaliz con sabor tutti frutti, una explosión de sabores en cada mordida.', 4.90, 6, 100, 1);
+VALUES (5, 'hogar4.jpg', 'Sony Bravia XR OLED', 'Smart TV con inteligencia cognitiva y control por voz.', 1799.99, 4, 5, 1);
 
 INSERT INTO PRODUCTO (CODCATEGORIA, IMGPRODUCTO, NOMPRODUCTO, DESCRIPCION, PREUNI, CODMARCA, STOCK, ESTPRODUCTO) 
-VALUES (5, 'golosinas5.jpg', 'GOMAS BANANAS 90G', 'Gomitas con forma de banana y un delicioso sabor frutal, perfectas para cualquier ocasión.', 4.90, 6, 100, 1);
+VALUES (5, 'hogar5.jpg', 'HP Smart Tank 7305', 'Impresora inalámbrica con control vía app.', 289.99, 5, 8, 1);
 
 INSERT INTO PRODUCTO (CODCATEGORIA, IMGPRODUCTO, NOMPRODUCTO, DESCRIPCION, PREUNI, CODMARCA, STOCK, ESTPRODUCTO) 
-VALUES (5, 'golosinas6.jpg', 'MARSHMALLOW PIPOCA', 'Malvaviscos suaves y esponjosos, ideales para compartir o disfrutar en cualquier momento.', 4.90, 6, 100, 1);
+VALUES (5, 'hogar6.jpg', 'Lenovo Smart Clock 2', 'Reloj inteligente con pantalla táctil y Google Assistant.', 69.99, 6, 12, 1);
 
 INSERT INTO PRODUCTO (CODCATEGORIA, IMGPRODUCTO, NOMPRODUCTO, DESCRIPCION, PREUNI, CODMARCA, STOCK, ESTPRODUCTO) 
-VALUES (5, 'golosinas7.jpg', 'GOMAS MORAS 90G', 'Gomitas con sabor a mora, con una textura suave y deliciosa.', 4.90, 6, 100, 1);
+VALUES (5, 'hogar7.jpg', 'DJI Mini 2 SE', 'Drone compacto con retorno automático y conexión a casa.', 399.99, 7, 6, 1);
 
 INSERT INTO PRODUCTO (CODCATEGORIA, IMGPRODUCTO, NOMPRODUCTO, DESCRIPCION, PREUNI, CODMARCA, STOCK, ESTPRODUCTO) 
-VALUES (5, 'golosinas8.jpg', 'REGALIZ TWISTER ACIDO 80G', 'Twisters de regaliz ácido, una opción divertida y sabrosa para los amantes del dulce y lo ácido.', 4.90, 6, 100, 1);
+VALUES (5, 'hogar8.jpg', 'GoPro Hero como cámara de seguridad', 'Cámara versátil para vigilancia doméstica.', 299.99, 8, 10, 1);
 
 INSERT INTO PRODUCTO (CODCATEGORIA, IMGPRODUCTO, NOMPRODUCTO, DESCRIPCION, PREUNI, CODMARCA, STOCK, ESTPRODUCTO) 
-VALUES (5, 'golosinas9.jpg', 'GOMA PULPO', 'Gomitas con forma de pulpo, perfectas para disfrutar un bocado dulce y frutal.', 4.90, 6, 100, 1);
+VALUES (5, 'hogar9.jpg', 'Anker Eufy Video Doorbell', 'Timbre inteligente con cámara y reconocimiento facial.', 179.99, 9, 9, 1);
 
 INSERT INTO PRODUCTO (CODCATEGORIA, IMGPRODUCTO, NOMPRODUCTO, DESCRIPCION, PREUNI, CODMARCA, STOCK, ESTPRODUCTO) 
-VALUES (5, 'golosinas10.jpg', 'GOMA SAPOS', 'Gomitas con forma de sapo, divertidas y deliciosas para todas las edades.', 4.90, 6, 100, 1);
+VALUES (5, 'hogar10.jpg', 'TP-Link Tapo C200', 'Cámara de seguridad Wi-Fi con visión nocturna.', 39.99, 10, 18, 1);
 
 INSERT INTO PRODUCTO (CODCATEGORIA, IMGPRODUCTO, NOMPRODUCTO, DESCRIPCION, PREUNI, CODMARCA, STOCK, ESTPRODUCTO) 
-VALUES (5, 'golosinas11.jpg', 'REGALIZ FRESA ACIDA 80G', 'Regaliz con sabor a fresa y un toque ácido, ideal para quienes buscan algo diferente.', 4.90, 6, 100, 1);
+VALUES (5, 'hogar11.jpg', 'TP-Link Tapo P100', 'Enchufe inteligente controlable desde el móvil.', 24.99, 10, 30, 1);
 
 INSERT INTO PRODUCTO (CODCATEGORIA, IMGPRODUCTO, NOMPRODUCTO, DESCRIPCION, PREUNI, CODMARCA, STOCK, ESTPRODUCTO) 
-VALUES (5, 'golosinas12.jpg', 'GOMA OSITOS 90G', 'Gomitas en forma de ositos, un clásico que nunca pasa de moda.', 4.90, 6, 100, 1);
+VALUES (5, 'hogar12.jpg', 'Anker Eufy Smart Bulb', 'Foco inteligente con control por voz y app.', 29.99, 9, 20, 1);
 
 
 -- FOTOGRAFIA
 INSERT INTO PRODUCTO (CODCATEGORIA, IMGPRODUCTO, NOMPRODUCTO, DESCRIPCION, PREUNI, CODMARCA, STOCK, ESTPRODUCTO) 
-VALUES (6, 'mascotas1.jpg', 'JUGUETE DE ABEJA PARA MASCOTA', 'Divertido juguete en forma de abeja, ideal para que tu mascota juegue y se mantenga activa.', 12.90, 1, 100, 1);
+VALUES (6, 'fotografia1.jpg', 'GoPro HERO12 Black', 'Cámara de acción con grabación 5.3K y estabilización avanzada.', 449.99, 8, 12, 1);
 
 INSERT INTO PRODUCTO (CODCATEGORIA, IMGPRODUCTO, NOMPRODUCTO, DESCRIPCION, PREUNI, CODMARCA, STOCK, ESTPRODUCTO) 
-VALUES (6, 'mascotas2.jpg', 'COLLAR MARIPOSA VERDE PARA MASCOTA', 'Collar con diseño de mariposa en color verde, perfecto para darle un toque único y colorido a tu mascota.', 11.90, 1, 100, 1);
+VALUES (6, 'fotografia2.jpg', 'Sony Alpha A7 III', 'Cámara mirrorless full-frame con enfoque automático preciso.', 1999.99, 4, 6, 1);
 
 INSERT INTO PRODUCTO (CODCATEGORIA, IMGPRODUCTO, NOMPRODUCTO, DESCRIPCION, PREUNI, CODMARCA, STOCK, ESTPRODUCTO) 
-VALUES (6, 'mascotas3.jpg', 'COLLAR PARA MASCOTAS ROJO', 'Elegante collar rojo para mascotas, ajustable y cómodo para tu compañero.', 24.90, 1, 100, 1);
+VALUES (6, 'fotografia3.jpg', 'DJI Osmo Pocket 2', 'Cámara portátil con estabilizador y calidad 4K.', 349.99, 7, 10, 1);
 
 INSERT INTO PRODUCTO (CODCATEGORIA, IMGPRODUCTO, NOMPRODUCTO, DESCRIPCION, PREUNI, CODMARCA, STOCK, ESTPRODUCTO) 
-VALUES (6, 'mascotas4.jpg', 'PEINE CON BASE PARA MASCOTAS NARANJA', 'Peine con base resistente en color naranja, ideal para mantener el pelaje de tu mascota suave y sin enredos.', 19.90, 1, 100, 1);
+VALUES (6, 'fotografia4.jpg', 'HP Sprocket', 'Mini impresora fotográfica para móviles con conexión Bluetooth.', 129.99, 5, 15, 1);
 
 INSERT INTO PRODUCTO (CODCATEGORIA, IMGPRODUCTO, NOMPRODUCTO, DESCRIPCION, PREUNI, CODMARCA, STOCK, ESTPRODUCTO) 
-VALUES (6, 'mascotas5.jpg', 'CORTAUÑAS PARA MASCOTAS CELESTE CON LUZ', 'Cortauñas para mascotas en color celeste, con luz integrada para mayor precisión al cortar.', 29.90, 1, 100, 1);
+VALUES (6, 'fotografia5.jpg', 'Anker Ring Light 10"', 'Aro de luz LED con soporte para selfies y grabaciones.', 49.99, 9, 25, 1);
 
 INSERT INTO PRODUCTO (CODCATEGORIA, IMGPRODUCTO, NOMPRODUCTO, DESCRIPCION, PREUNI, CODMARCA, STOCK, ESTPRODUCTO) 
-VALUES (6, 'mascotas6.jpg', 'PEINE CON BASE PARA MASCOTAS CELESTE', 'Peine con base resistente en color celeste, ideal para el cuidado diario del pelaje de tu mascota.', 19.90, 1, 100, 1);
+VALUES (6, 'fotografia6.jpg', 'Lenovo 500 FHD Webcam', 'Cámara web Full HD para videollamadas y grabaciones.', 59.99, 6, 20, 1);
 
 INSERT INTO PRODUCTO (CODCATEGORIA, IMGPRODUCTO, NOMPRODUCTO, DESCRIPCION, PREUNI, CODMARCA, STOCK, ESTPRODUCTO) 
-VALUES (6, 'mascotas7.jpg', 'JUGUETE PARA MASCOTA PELUCHE PÁJARO NARANJA', 'Peluche en forma de pájaro color naranja, suave y resistente, perfecto para el entretenimiento de tu mascota.', 14.90, 1, 100, 1);
+VALUES (6, 'fotografia7.jpg', 'TP-Link Tapo C325WB', 'Cámara exterior con ultra visión y tecnología ColorPro.', 109.99, 10, 8, 1);
 
 INSERT INTO PRODUCTO (CODCATEGORIA, IMGPRODUCTO, NOMPRODUCTO, DESCRIPCION, PREUNI, CODMARCA, STOCK, ESTPRODUCTO) 
-VALUES (6, 'mascotas8.jpg', 'COLLAR MARIPOSA ROSA PARA MASCOTA', 'Collar con diseño de mariposa en color rosa, perfecto para darle un toque adorable a tu mascota.', 12.90, 1, 100, 1);
+VALUES (6, 'fotografia8.jpg', 'Samsung Galaxy Camera 2', 'Cámara compacta con Android y conectividad Wi-Fi.', 299.99, 2, 9, 1);
 
 INSERT INTO PRODUCTO (CODCATEGORIA, IMGPRODUCTO, NOMPRODUCTO, DESCRIPCION, PREUNI, CODMARCA, STOCK, ESTPRODUCTO) 
-VALUES (6, 'mascotas9.jpg', 'CORTAUÑAS PARA MASCOTAS BEIGE CON LUZ', 'Cortauñas para mascotas en color beige, con luz para cortes precisos y seguros.', 29.90, 1, 100, 1);
+VALUES (6, 'fotografia9.jpg', 'iPhone 15 Pro - Modo Cinemático', 'Smartphone con cámara triple y grabación en ProRes.', 1199.99, 1, 14, 1);
 
 INSERT INTO PRODUCTO (CODCATEGORIA, IMGPRODUCTO, NOMPRODUCTO, DESCRIPCION, PREUNI, CODMARCA, STOCK, ESTPRODUCTO) 
-VALUES (6, 'mascotas10.jpg', 'COLLAR PARA MASCOTA ROSA', 'Collar en color rosa, ideal para paseos con estilo. Cómodo y ajustable.', 14.90, 1, 100, 1);
+VALUES (6, 'fotografia10.jpg', 'Sony ZV-E10', 'Cámara ideal para vlogging con pantalla abatible y micrófono externo.', 749.99, 4, 7, 1);
 
 INSERT INTO PRODUCTO (CODCATEGORIA, IMGPRODUCTO, NOMPRODUCTO, DESCRIPCION, PREUNI, CODMARCA, STOCK, ESTPRODUCTO) 
-VALUES (6, 'mascotas11.jpg', 'JUEGO DE PLUMA PARA GATO (PLUMA Y ESTRELLA)', 'Set de pluma y estrella para gatos, perfecto para estimular el instinto de juego y caza de tu felino.', 12.90, 1, 100, 1);
+VALUES (6, 'fotografia11.jpg', 'DJI Mavic Air 2', 'Drone con cámara 4K y modos inteligentes de fotografía.', 799.99, 7, 5, 1);
 
 INSERT INTO PRODUCTO (CODCATEGORIA, IMGPRODUCTO, NOMPRODUCTO, DESCRIPCION, PREUNI, CODMARCA, STOCK, ESTPRODUCTO) 
-VALUES (6, 'mascotas12.jpg', 'ARNÉS PARA MASCOTAS S - AZUL', 'Arnés ajustable en color azul para mascotas pequeñas, ideal para paseos cómodos y seguros.', 29.90, 1, 100, 1);
+VALUES (6, 'fotografia12.jpg', 'Xiaomi Mi 360° Home Camera 2K', 'Cámara de vigilancia con visión nocturna y control desde app.', 54.99, 3, 18, 1);
 
 
 -- DISTRITO
@@ -292,112 +292,104 @@ INSERT INTO DISTRITO (NOMBREDISTRITO, CODPOSTAL, ESTDISTRITO) VALUES ('La Molina
 INSERT INTO DISTRITO (NOMBREDISTRITO, CODPOSTAL, ESTDISTRITO) VALUES ('San Juan de Lurigancho', '10031', 1);
 INSERT INTO DISTRITO (NOMBREDISTRITO, CODPOSTAL, ESTDISTRITO) VALUES ('San Juan de Miraflores', '10032', 1);
 
-
 -- CLIENTE
 INSERT INTO CLIENTE (NUMEROCOMDOCUMENTO, APELLIDOS, NOMBRES, CODDISTRITO, DIRECCION, FECNAC, SEXO, CORREO, TELEFONO, ESTCLIENTE)
-VALUES ('11234567', 'Novikov', 'Maxim', 2, 'Av. Ricardo Elías Aparicio 740', '2000-05-12', 'M', 'novikow.maxim@gmail.com', '987654321', 1);
+VALUES ('11234567', 'Novikov Petrov', 'Maxim Ivan', 2, 'Av. Ricardo Elías Aparicio 740', '2000-05-12', 'M', 'novikow.maxim@gmail.com', '987654321', 1);
 
 INSERT INTO CLIENTE (NUMEROCOMDOCUMENTO, APELLIDOS, NOMBRES, CODDISTRITO, DIRECCION, FECNAC, SEXO, CORREO, TELEFONO, ESTCLIENTE)
-VALUES ('87654321', 'Gómez', 'Laura', 3, 'Av. Centenario, 25', '2000-05-12', 'F', 'gómez.laura@gmail.com', '976543210', 1);
+VALUES ('87654321', 'Gómez Pérez', 'Laura Sofía', 3, 'Av. Centenario, 25', '2000-05-12', 'F', 'gómez.laura@gmail.com', '976543210', 1);
 
 INSERT INTO CLIENTE (NUMEROCOMDOCUMENTO, APELLIDOS, NOMBRES, CODDISTRITO, DIRECCION, FECNAC, SEXO, CORREO, TELEFONO, ESTCLIENTE)
-VALUES ('34567890', 'Mercedes', 'Mario', 4, 'Jr 28 De Julio 537 A, Cercado', '1987-08-10', 'M', 'mercedes.mario@gmail.com', '965432109', 1);
+VALUES ('34567890', 'Mercedes López', 'Mario Alberto', 4, 'Jr 28 De Julio 537 A, Cercado', '1987-08-10', 'M', 'mercedes.mario@gmail.com', '965432109', 1);
 
 INSERT INTO CLIENTE (NUMEROCOMDOCUMENTO, APELLIDOS, NOMBRES, CODDISTRITO, DIRECCION, FECNAC, SEXO, CORREO, TELEFONO, ESTCLIENTE)
-VALUES ('98765432', 'Garcia', 'Ester', 7, 'Los Cedros 209', '2002-10-11', 'F', 'garcia.ester@gmail.com', '954321098', 1);
+VALUES ('98765432', 'García Ruiz', 'Ester María', 7, 'Los Cedros 209', '2002-10-11', 'F', 'garcia.ester@gmail.com', '954321098', 1);
 
 INSERT INTO CLIENTE (NUMEROCOMDOCUMENTO, APELLIDOS, NOMBRES, CODDISTRITO, DIRECCION, FECNAC, SEXO, CORREO, TELEFONO, ESTCLIENTE)
-VALUES ('12345678', 'Rodríguez', 'Jose', 2, 'Jr. Ucayali N° 388 ', '1989-03-21', 'M', 'rodriguez.jose@gmail.com', '943210987', 1);
+VALUES ('12345678', 'Rodríguez Sánchez', 'José Luis', 2, 'Jr. Ucayali N° 388 ', '1989-03-21', 'M', 'rodriguez.jose@gmail.com', '943210987', 1);
 
 INSERT INTO CLIENTE (NUMEROCOMDOCUMENTO, APELLIDOS, NOMBRES, CODDISTRITO, DIRECCION, FECNAC, SEXO, CORREO, TELEFONO, ESTCLIENTE)
-VALUES ('87654320', 'Martinez', 'Rodrigo', 8, 'Jr. Camaná 616 ', '1999-10-17', 'M', 'martinez.rodrigo@gmail.com', '932109876', 1);
+VALUES ('87654320', 'Martínez Vargas', 'Rodrigo Andrés', 8, 'Jr. Camaná 616 ', '1999-10-17', 'M', 'martinez.rodrigo@gmail.com', '932109876', 1);
 
 INSERT INTO CLIENTE (NUMEROCOMDOCUMENTO, APELLIDOS, NOMBRES, CODDISTRITO, DIRECCION, FECNAC, SEXO, CORREO, TELEFONO, ESTCLIENTE)
-VALUES ('09876543', 'Gonzales', 'Fabrizio', 6, 'Jr Maria Montesori 150', '2002-01-13', 'M', 'gonzales.fabrizio@gmail.com', '921098765', 1);
+VALUES ('09876543', 'Gonzáles Torres', 'Fabrizio Daniel', 6, 'Jr Maria Montesori 150', '2002-01-13', 'M', 'gonzales.fabrizio@gmail.com', '921098765', 1);
 
 INSERT INTO CLIENTE (NUMEROCOMDOCUMENTO, APELLIDOS, NOMBRES, CODDISTRITO, DIRECCION, FECNAC, SEXO, CORREO, TELEFONO, ESTCLIENTE)
-VALUES ('23456789', 'Ruíz', 'Sandra', 9, 'AV De La Poesia 160', '1992-09-26', 'F', 'ruíz.sandra@gmail.com', '910987654', 1);
+VALUES ('23456789', 'Ruíz Castillo', 'Sandra Milena', 9, 'AV De La Poesia 160', '1992-09-26', 'F', 'ruíz.sandra@gmail.com', '910987654', 1);
 
 INSERT INTO CLIENTE (NUMEROCOMDOCUMENTO, APELLIDOS, NOMBRES, CODDISTRITO, DIRECCION, FECNAC, SEXO, CORREO, TELEFONO, ESTCLIENTE)
-VALUES ('11223344', 'Díaz', 'Raquel', 10, 'AV Las Casuarinas 250', '1995-07-19', 'F', 'díaz.raquel@gmail.com', '999876543', 1);
+VALUES ('11223344', 'Díaz Flores', 'Raquel Elena', 10, 'AV Las Casuarinas 250', '1995-07-19', 'F', 'díaz.raquel@gmail.com', '999876543', 1);
 
 INSERT INTO CLIENTE (NUMEROCOMDOCUMENTO, APELLIDOS, NOMBRES, CODDISTRITO, DIRECCION, FECNAC, SEXO, CORREO, TELEFONO, ESTCLIENTE)
-VALUES ('55667788', 'Muñoz', 'Diego', 2, 'AV Arenales 1302', '2003-10-08', 'M', 'muñoz.diego@gmail.com', '988765432', 1);
+VALUES ('55667788', 'Muñoz Herrera', 'Diego Armando', 2, 'AV Arenales 1302', '2003-10-08', 'M', 'muñoz.diego@gmail.com', '988765432', 1);
 
 INSERT INTO CLIENTE (NUMEROCOMDOCUMENTO, APELLIDOS, NOMBRES, CODDISTRITO, DIRECCION, FECNAC, SEXO, CORREO, TELEFONO, ESTCLIENTE)
-VALUES ('33445566', 'Álvarez', 'Javier', 3, 'Av. Abancay Cuadra 5', '1994-02-27', 'M', 'álvarez.javier@gmail.com', '977654321', 1);
+VALUES ('33445566', 'Álvarez Mendoza', 'Javier Eduardo', 3, 'Av. Abancay Cuadra 5', '1994-02-27', 'M', 'álvarez.javier@gmail.com', '977654321', 1);
 
 INSERT INTO CLIENTE (NUMEROCOMDOCUMENTO, APELLIDOS, NOMBRES, CODDISTRITO, DIRECCION, FECNAC, SEXO, CORREO, TELEFONO, ESTCLIENTE)
-VALUES ('29876543', 'Navarro', 'Sergio', 5, 'Av. Paseo de la República', '1998-06-15', 'M', 'navarro.sergio@gmail.com', '966543210', 1);
+VALUES ('29876543', 'Navarro Ortiz', 'Sergio Antonio', 5, 'Av. Paseo de la República', '1998-06-15', 'M', 'navarro.sergio@gmail.com', '966543210', 1);
 
 INSERT INTO CLIENTE (NUMEROCOMDOCUMENTO, APELLIDOS, NOMBRES, CODDISTRITO, DIRECCION, FECNAC, SEXO, CORREO, TELEFONO, ESTCLIENTE)
-VALUES ('77889900', 'Morales', 'Vanessa', 1, 'Jr Ciro Alegria 430', '2001-01-11', 'F', 'morales.vanessa@gmail.com', '955432109', 1);
+VALUES ('77889900', 'Morales Vega', 'Vanessa Lucía', 1, 'Jr Ciro Alegria 430', '2001-01-11', 'F', 'morales.vanessa@gmail.com', '955432109', 1);
 
 INSERT INTO CLIENTE (NUMEROCOMDOCUMENTO, APELLIDOS, NOMBRES, CODDISTRITO, DIRECCION, FECNAC, SEXO, CORREO, TELEFONO, ESTCLIENTE)
-VALUES ('P1234567', 'Han', 'Jie', 7, 'Jr San Agustin Zea 200', '1986-07-04', 'M', 'han.jie@gmail.com', '944321098', 1);
+VALUES ('P1234567', 'Han Zhang', 'Jie Wei', 7, 'Jr San Agustin Zea 200', '1986-07-04', 'M', 'han.jie@gmail.com', '944321098', 1);
 
 INSERT INTO CLIENTE (NUMEROCOMDOCUMENTO, APELLIDOS, NOMBRES, CODDISTRITO, DIRECCION, FECNAC, SEXO, CORREO, TELEFONO, ESTCLIENTE)
-VALUES ('99001122', 'Vasquez', 'Ana', 4, 'JR 2 De Mayo 107', '1993-02-05', 'F', 'vasquez.ana@gmail.com', '933210987', 1);
-
+VALUES ('99001122', 'Vásquez Ramos', 'Ana Patricia', 4, 'JR 2 De Mayo 107', '1993-02-05', 'F', 'vasquez.ana@gmail.com', '933210987', 1);
 
 -- EMPLEADO
-INSERT INTO EMPLEADO (NUMERODOCUMENTO, APELLIDOS, NOMBRES,  CODDISTRITO, DIRECCION, FECNAC, SEXO, CORREO, ESTEMPLEADO)
-VALUES ('72556891', 'Lopez', 'Juan', 4, 'av. josé larco 40', '1994-05-12', 'M', 'juan.lopez@gmail.com', 1);
+INSERT INTO EMPLEADO (NUMERODOCUMENTO, APELLIDOS, NOMBRES, CODDISTRITO, DIRECCION, FECNAC, SEXO, CORREO, ESTEMPLEADO)
+VALUES ('72556891', 'López García', 'Juan Carlos', 4, 'av. josé larco 40', '1994-05-12', 'M', 'juan.lopez@gmail.com', 1);
 
 INSERT INTO EMPLEADO (NUMERODOCUMENTO, APELLIDOS, NOMBRES, CODDISTRITO, DIRECCION, FECNAC, SEXO, CORREO, ESTEMPLEADO)
-VALUES ('72902765', 'Mercedes', 'Lorena', 1, 'jirón josé galvez 895', '1991-03-06', 'F', 'lorena.mercedes@gmail.com', 1);
+VALUES ('72902765', 'Mercedes Torres', 'Lorena María', 1, 'jirón josé galvez 895', '1991-03-06', 'F', 'lorena.mercedes@gmail.com', 1);
 
 INSERT INTO EMPLEADO (NUMERODOCUMENTO, APELLIDOS, NOMBRES, CODDISTRITO, DIRECCION, FECNAC, SEXO, CORREO, ESTEMPLEADO)
-VALUES ('65247938', 'Caceres', 'Luis', 6, 'jr. los amautas 180', '1992-07-10', 'M', 'luis.caceres@gmail.com', 1);
+VALUES ('65247938', 'Cáceres Ruiz', 'Luis Alberto', 6, 'jr. los amautas 180', '1992-07-10', 'M', 'luis.caceres@gmail.com', 1);
 
 INSERT INTO EMPLEADO (NUMERODOCUMENTO, APELLIDOS, NOMBRES, CODDISTRITO, DIRECCION, FECNAC, SEXO, CORREO, ESTEMPLEADO)
-VALUES ('63822909', 'Jiménez', 'Laura', 3, 'jr. sol 357', '1986-12-15', 'F', 'laura.jimenez@mail.com', 1);
+VALUES ('63822909', 'Jiménez Pérez', 'Laura Sofía', 3, 'jr. sol 357', '1986-12-15', 'F', 'laura.jimenez@mail.com', 1);
 
 INSERT INTO EMPLEADO (NUMERODOCUMENTO, APELLIDOS, NOMBRES, CODDISTRITO, DIRECCION, FECNAC, SEXO, CORREO, ESTEMPLEADO)
-VALUES ('75893021', 'Perez', 'Ana', 2, 'av. la paz 123', '1995-08-22', 'F', 'ana.perez@gmail.com', 1);
+VALUES ('75893021', 'Pérez Sánchez', 'Ana Lucía', 2, 'av. la paz 123', '1995-08-22', 'F', 'ana.perez@gmail.com', 1);
 
 INSERT INTO EMPLEADO (NUMERODOCUMENTO, APELLIDOS, NOMBRES, CODDISTRITO, DIRECCION, FECNAC, SEXO, CORREO, ESTEMPLEADO)
-VALUES ('75102834', 'Gomez', 'Carlos', 5, 'jr. belgrano 456', '1990-11-12', 'M', 'carlos.gomez@gmail.com', 1);
+VALUES ('75102834', 'Gómez Vargas', 'Carlos Eduardo', 5, 'jr. belgrano 456', '1990-11-12', 'M', 'carlos.gomez@gmail.com', 1);
 
 INSERT INTO EMPLEADO (NUMERODOCUMENTO, APELLIDOS, NOMBRES, CODDISTRITO, DIRECCION, FECNAC, SEXO, CORREO, ESTEMPLEADO)
-VALUES ('77632478', 'Vega', 'Elena', 7, 'av. jorge chavez 789', '1988-04-07', 'F', 'elena.vega@gmail.com', 1);
+VALUES ('77632478', 'Vega Mendoza', 'Elena Patricia', 7, 'av. jorge chavez 789', '1988-04-07', 'F', 'elena.vega@gmail.com', 1);
 
 INSERT INTO EMPLEADO (NUMERODOCUMENTO, APELLIDOS, NOMBRES, CODDISTRITO, DIRECCION, FECNAC, SEXO, CORREO, ESTEMPLEADO)
-VALUES ('72485367', 'Salazar', 'Ricardo', 4, 'av. las americas 321', '1993-02-15', 'M', 'ricardo.salazar@gmail.com', 1);
+VALUES ('72485367', 'Salazar Ortiz', 'Ricardo Antonio', 4, 'av. las americas 321', '1993-02-15', 'M', 'ricardo.salazar@gmail.com', 1);
 
 INSERT INTO EMPLEADO (NUMERODOCUMENTO, APELLIDOS, NOMBRES, CODDISTRITO, DIRECCION, FECNAC, SEXO, CORREO, ESTEMPLEADO)
-VALUES ('73487261', 'Romero', 'Sofia', 2, 'jr. los pinos 567', '1996-09-30', 'F', 'sofia.romero@gmail.com', 1);
-
+VALUES ('73487261', 'Romero Castillo', 'Sofía Isabel', 2, 'jr. los pinos 567', '1996-09-30', 'F', 'sofia.romero@gmail.com', 1);
 
 -- USUARIO
 INSERT INTO USUARIO (APEUSUARIO, NOMUSUARIO, CORUSUARIO, CONUSUARIO, ESTUSUARIO, CODEMPLEADO, CODROL)
-VALUES ('Lopez', 'Juan', 'juan.lopez@gmail.com', 'ContraseñaGenerada123', 1, 1, 1);
-
-
-INSERT INTO USUARIO (APEUSUARIO, NOMUSUARIO, CORUSUARIO, CONUSUARIO, ESTUSUARIO, CODEMPLEADO, CODROL)
-VALUES ('Mercedes', 'Lorena', 'lorena.mercedes@gmail.com', 'ContraseñaGenerada123', 1, 1, 1);
-
+VALUES ('Lopez García', 'Juan Carlos', 'juan.lopez@gmail.com', 'ContraseñaGenerada123', 1, 1, 1);
 
 INSERT INTO USUARIO (APEUSUARIO, NOMUSUARIO, CORUSUARIO, CONUSUARIO, ESTUSUARIO, CODEMPLEADO, CODROL)
-VALUES ('Caceres', 'Luis', 'luis.caceres@gmail.com', 'ContraseñaGenerada123', 1, 1, 1);
-
+VALUES ('Mercedes Torres', 'Lorena María', 'lorena.mercedes@gmail.com', 'ContraseñaGenerada123', 1, 1, 1);
 
 INSERT INTO USUARIO (APEUSUARIO, NOMUSUARIO, CORUSUARIO, CONUSUARIO, ESTUSUARIO, CODEMPLEADO, CODROL)
-VALUES ('Jiménez', 'Laura', 'laura.jimenez@mail.com', 'ContraseñaGenerada123', 4, 1, 1);
+VALUES ('Cáceres Ruiz', 'Luis Alberto', 'luis.caceres@gmail.com', 'ContraseñaGenerada123', 1, 1, 1);
 
-
-INSERT INTO USUARIO (APEUSUARIO, NOMUSUARIO, CORUSUARIO, CONUSUARIO, ESTUSUARIO, CODROL)
-VALUES ('Ataulluco', 'Ashly', 'ashly.ataulluco@gmail.com', 'ashly123', 1, 1); -- Rol Administrador
-
-INSERT INTO USUARIO (APEUSUARIO, NOMUSUARIO, CORUSUARIO, CONUSUARIO, ESTUSUARIO, CODROL)
-VALUES('Hidalgo', 'Eyen', 'eyen.hidalgo@gmail.com', 'eyen123', 1, 2); -- Rol Vendedor
+INSERT INTO USUARIO (APEUSUARIO, NOMUSUARIO, CORUSUARIO, CONUSUARIO, ESTUSUARIO, CODEMPLEADO, CODROL)
+VALUES ('Jiménez Pérez', 'Laura Sofía', 'laura.jimenez@mail.com', 'ContraseñaGenerada123', 4, 1, 1);
 
 INSERT INTO USUARIO (APEUSUARIO, NOMUSUARIO, CORUSUARIO, CONUSUARIO, ESTUSUARIO, CODROL)
-VALUES ('Arteaga', 'Miguel', 'miguel.arteaga@gmail.com', 'miguel123', 1, 3); -- Rol Cajero
+VALUES ('Ataulluco Torres', 'Ashly', 'ashly.ataulluco@gmail.com', 'ashly123', 1, 1); -- Rol Administrador
 
 INSERT INTO USUARIO (APEUSUARIO, NOMUSUARIO, CORUSUARIO, CONUSUARIO, ESTUSUARIO, CODROL)
-VALUES ('Reyna', 'Sabrina', 'sabrina.reyna@gmail.com', 'sabrina123', 1, 4); -- Rol Soporte
+VALUES('Hidalgo Amaringo', 'Eyen', 'eyen.hidalgo@gmail.com', 'eyen123', 1, 2); -- Rol Vendedor
 
+INSERT INTO USUARIO (APEUSUARIO, NOMUSUARIO, CORUSUARIO, CONUSUARIO, ESTUSUARIO, CODROL)
+VALUES ('Arteaga Jimenez', 'Miguel', 'miguel.arteaga@gmail.com', 'miguel123', 1, 3); -- Rol Cajero
+
+INSERT INTO USUARIO (APEUSUARIO, NOMUSUARIO, CORUSUARIO, CONUSUARIO, ESTUSUARIO, CODROL)
+VALUES ('Reyna Andrade', 'Sabrina', 'sabrina.reyna@gmail.com', 'sabrina123', 1, 4); -- Rol Soporte
 
 -- PEDIDO
 INSERT INTO PEDIDO (CODCLIENTE, CODEMPLEADO, FECPED, ACTPED, ESTPED) VALUES (1, 2, '2025-03-01', 'Procesando', 1);
@@ -410,7 +402,6 @@ INSERT INTO PEDIDO (CODCLIENTE, CODEMPLEADO, FECPED, ACTPED, ESTPED) VALUES (7, 
 INSERT INTO PEDIDO (CODCLIENTE, CODEMPLEADO, FECPED, ACTPED, ESTPED) VALUES (8, 1, '2025-03-08', 'Entregado', 1);
 INSERT INTO PEDIDO (CODCLIENTE, CODEMPLEADO, FECPED, ACTPED, ESTPED) VALUES (9, 4, '2025-03-09', 'Enviado', 1);
 INSERT INTO PEDIDO (CODCLIENTE, CODEMPLEADO, FECPED, ACTPED, ESTPED) VALUES (10, 5, '2025-03-10', 'Cancelado', 0);
-
 
 -- DETALLEPEDIDO
 INSERT INTO DETALLEPEDIDO (CODPEDIDO, CODPRODUCTO, PREUNI, CANTIDAD, EST_PP) VALUES (1, 1, 12.80, 2, 1);
