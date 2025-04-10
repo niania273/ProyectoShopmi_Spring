@@ -24,8 +24,23 @@ public class MarcaService {
         return repositorio.findById(id);
     }
 
-    public void saveUpdate(Marca marca)
+    public void saveMarca(Marca marca)
     {
+        repositorio.save(marca);
+    }
+
+    public void updateMarca(Integer id, Marca marca) {
+        if (!repositorio.existsById(id)) {
+            throw new RuntimeException("Marca no encontrada");
+        }
+        marca.setCodMarca(id);
+        repositorio.save(marca);
+    }
+
+    public void deleteMarca(Integer id) {
+        Marca marca = repositorio.findById(id)
+                .orElseThrow(() -> new RuntimeException("Marca no encontrada"));
+        marca.setEstMarca(false);
         repositorio.save(marca);
     }
 
