@@ -46,16 +46,7 @@ public class ProductoService {
     {
         repositorio.save(producto);
     }
-
-    public void saveMarca(Marca marca)
-    {
-        repositorio2.save(marca);
-    }
-
-    public void saveCategoria(Categoria categoria){
-        repositorio3.save(categoria);
-    }
-
+    
     /* Actualizar */
     public void updateProducto(Integer id, Producto producto){
         if (!repositorio.existsById(id)) {
