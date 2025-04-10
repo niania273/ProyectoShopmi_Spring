@@ -19,7 +19,7 @@ public class MarcaService {
         return repositorio.findAll();
     }
 
-    public Optional<Marca> getMarcas(Long id)
+    public Optional<Marca> getMarca(Integer id)
     {
         return repositorio.findById(id);
     }
@@ -30,4 +30,3 @@ public class MarcaService {
     }
 
 }
-
