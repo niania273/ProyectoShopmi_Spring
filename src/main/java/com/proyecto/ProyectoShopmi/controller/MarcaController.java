@@ -27,9 +27,19 @@ public class MarcaController {
     }
 
     @PostMapping
-    public void guardar(@RequestBody Marca marca)
+    public void guardarMarca(@RequestBody Marca marca)
     {
-        servicio.saveUpdate(marca);
+        servicio.saveMarca(marca);
     }
-}
 
+    @PutMapping("/{marcaId}")
+    public void updateMarca(@PathVariable("marcaId") Integer marcaId, @RequestBody Marca marca) {
+        servicio.updateMarca(marcaId, marca);
+    }
+
+    @DeleteMapping("/{marcaId}")
+    public void deleteMarca(@PathVariable("marcaId") Integer marcaId) {
+        servicio.deleteMarca(marcaId);
+    }
+
+}
